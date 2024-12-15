@@ -9,7 +9,7 @@ const App = () => {
   const sentData = (e) => {
     e.preventDefault();
     axios
-      .post("https://render.com/docs/web-services#port-binding", { name, email, password })
+      .post("https://mongo-react-backend.onrender.com/entry", { name, email, password })
       .then((result) => console.log(result), alert("Data Send"))
       .catch((err) => console.log(err));
   };

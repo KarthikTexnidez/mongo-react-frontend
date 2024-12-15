@@ -9,7 +9,7 @@ const App = () => {
   const sentData = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000/entry", { name, email, password })
+      .post("https://render.com/docs/web-services#port-binding/entry", { name, email, password })
       .then((result) => console.log(result), alert("Data Send"))
       .catch((err) => console.log(err));
   };
